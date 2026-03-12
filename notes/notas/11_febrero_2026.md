@@ -1,93 +1,146 @@
-# 11 de Febrero 2026 - <título>
+# 11 de Febrero 2026 - Políticas y Gestión de Riesgos en BCMS (ISO 22301)
 
-*La primera parte de la clase se hizo una recapitulación de qué cubre BCP, DRP, se definió resilencia operacional es "Estirar lo máximo que se pueda sin romperse"*
+!!! info "Recapitulación Inicial"
 
-## ISO 22301 versión 2019
+    La sesión inició con un repaso sobre los conceptos de BCP y DRP. Se definió la **resiliencia operacional** de forma práctica como: *"Estirar lo máximo que se pueda sin romperse"*.
 
-- Política de continuidad de negocio
-  - Documento maestro
+---
 
-### Dueño vs Custodio de la información
+## ISO 22301:2019
 
-Por ejemplo, finanzas maneja documentos, por ejemplo, 100 exceles en donde hacen su trabajo, Finanzas tiene toda esa información confidencial. El dueño siempre va a ser el que tenga más alto nivel jararquico de ese área, en este caso, el director de finanzas, el director de finanzas es el dueño de la información.
+### Política de Continuidad de Negocio
 
-En resumen, la posisión más alta en cierta área es el dueño de la información.
+La política es el documento maestro que rige el Sistema de Gestión de Continuidad del Negocio (BCMS). Debe ser un documento formal que contenga: versión, fecha, clave de identificación, responsable, alcance definido, marco teórico, y sobre todo, debe ser clara, concisa y medible.
 
-El custodio es el área o proceso que vele que esa información siga íntegra, disponible y confidencial.
+### Dueño vs. Custodio de la Información
 
-En el documento de la continuidad de negocio el dueño de eso es el CISO o la persona encargada de manejar esa información.
+Es fundamental separar las responsabilidades sobre los datos y activos en la organización:
 
-Nos habló de qué debe de contener una política, Versión, Fecha, Clave, Responsable, clara, concisa, con alcance claro, marco teórico, clara, medible, etc.
+- **Dueño de la Información (Data Owner):**
 
-Habló de como "enforce" el que si están cumpliendo lo que las políticas dicen, se intencambiaron ideas, que se puede capacitar, educar, etc. Entonces el punto era que una de las cosas que debemos saber al tener políticas es:
+  Es la persona con el nivel jerárquico más alto en el área que genera o utiliza los datos. Por ejemplo, el Director de Finanzas (CFO) es el dueño de los archivos y registros financieros confidenciales. En el caso del documento de continuidad de negocio, el dueño suele ser el CISO o el director encargado del BCMS.
 
-1. Hacer la política
-2. Informar la política
+- **Custodio de la Información (Data Custodian):**
 
-Es normal acaban en estos dos pasos, y listo, pero no es el punto, hay que cubrír todas las partes y seguir haciendolo.
+  Es el área técnica o proceso (generalmente TI o Seguridad de la Información) responsable de velar porque esa información mantenga su [Confidencialidad, Integridad y Disponibilidad (Triada CIA)](https://es.wikipedia.org/wiki/Seguridad_de_la_informaci%C3%B3n#Principios_de_la_seguridad_de_la_informaci%C3%B3n).
 
-3. Medir efectividad
 
-Con Kpis, metricas efectivas.
 
-4. Mejora continua
+[Image of Information Security CIA triad]
 
-Algo que siempre tienes que tener en cuenta es: Analizar -> Medir -> Mejorar. Lo que sea siempre vas a tener estos 3 puntos.
 
-Entonces, el punto 3. 4. hay que reforzar para estar mejorando las políticas.
+---
 
-- Cómo puedo medir la efectividad?
-  - Dentro del documento de políticas o procedimientos, vienen los responsables. Vamos a medir a los responsables, ellos son los responsables de que se lleven acabo. Una de las cosas que puedes usar para medir la efectividad es usar el Table Top, un ejercicio de simulación basado en discusión, es decir, hacer una situación ficticia con los responsables y medir su conocimiento.
+### Ciclo de Vida y Cumplimiento de Políticas
 
-Rendición de cuentas: Quíen tiene que ser el que tiene que tener accountability? es el CEO o Accionistas, el que DEBERÍA La rendición de cuentas es por el niver jerarquico más alto en la organización.
+No basta con escribir el documento. Para garantizar (*enforce*) que las políticas se cumplan, se debe seguir un ciclo continuo y no detenerse en los primeros pasos:
 
-Quíen lo comunica? el que se debe activar el plan de continuidad de negocio y drp: las opciones propuesta fueron:
-- Responsable más alto
-- Dueño del proceso
+1. **Hacer la política:**
 
-Qué se hace primero en un incidente? Contener, Investigar, Recuperar, Informar?
+   Redacción y aprobación formal del documento.
 
-El orden en el que se tiene que hacer es:
-Dijo que depende xdxdxd.
+2. **Informar la política:**
 
-- ¿Quién comunica en un incidente?
-  - ¿Es primordial?
-    - ¿Qué información afecta?
-      - Pública
-      - Privada
-      - Interna
-      - Confidencial
-        - Procesos de negocio
-        - info de empleados
-        - informacion de clientes
-          - PII (Personally Identifiable Information)
-          - PHI (Protected Health Information)
+   Capacitación, educación y concientización a todo el personal involucrado. Muchas organizaciones se detienen aquí, asumiendo que el trabajo ha terminado.
 
-## Integración en los procesos de negocio
+3. **Medir efectividad:**
 
-El BCMS no funciona aislado, sino que está incorporado dentro de los procesos operativos reales de la organización.
+   Establecer KPIs y métricas efectivas evaluando a los responsables definidos en el documento. Una excelente herramienta para medir el conocimiento y la respuesta de los responsables es el [Tabletop Exercise (Ejercicio de simulación de escritorio)](https://www.cisa.gov/resources-tools/services/cisa-tabletop-exercises-packages), donde se discute un escenario ficticio de desastre para evaluar la toma de decisiones.
 
-Es complicado poder aterrizar la misión visión y objetivo y que esté alineado con las políticas, diseños, controles, análisis de riesgos, etc.
+4. **Mejora continua:**
 
-Si nosotros como SI no protegemos la integridad, confidencialidad, disponibilidad, no va a haber fuerza humana para poder vender el producto si no tiene eso en orden. A pesar de que directamente no podemos aportar, indirectamente generamos mucho valor al objetivo del negocio.
+   Basado en el ciclo perpetuo de **Analizar -> Medir -> Mejorar**. Las políticas deben evolucionar con el negocio y los resultados empíricos de las mediciones.
 
-## Acciones para abordar riesgos y oportunidades
+---
 
-Riesgo: es la probabilidad de que un evento afecte negativamente a los objetivos
+### Rendición de Cuentas (Accountability)
 
-Oportunidad: es la probabilidad de que un evento afecte positivamente a los objetivos
+- **¿Quién tiene la rendición de cuentas definitiva?**
 
-- Identificación de riesgos
-  - BIE no es nadamás esto. Tiene que ver con cualquier cosa que tenga un impacto económico.
-  - Evaluación de Riesgos
-  - Identificación de Activos y Recursos Críticos
-  - Identificar los riesgos para el sistema de gestión en sí, qué pasa si no se toma en serio los simulacros.
-  - Identificar los escenarios que nos pueden llevar a fracasar en la política
+  La responsabilidad última (*accountability*) siempre recae en el nivel jerárquico más alto de la organización, es decir, el CEO, el Consejo de Administración o los Accionistas.
 
-- Identificación de oportunidades
-  - Origen
-  - Tratamiento del riesgo
-    - Transferir el riesgo
-    - Evitarlo
-    - Aceptar
-    - Mitigar
+---
+
+## Gestión de Incidentes y Comunicación
+
+### Orden de Respuesta ante un Incidente
+
+¿Qué se hace primero: Contener, Investigar, Recuperar o Informar? 
+
+La respuesta técnica y operativa correcta es que **depende** de la naturaleza del incidente, aunque la contención suele ser la prioridad inmediata para mitigar la propagación del daño.
+
+### Comunicación en Crisis
+
+- **¿Quién comunica y qué se comunica?**
+
+  La decisión de quién activa el plan y quién se encarga de las comunicaciones depende directamente del impacto. Se debe evaluar meticulosamente qué tipo de información ha sido afectada:
+
+  - Pública.
+
+  - Privada.
+
+  - Interna.
+
+  - Confidencial:
+
+    - Procesos de negocio críticos.
+
+    - Información de empleados.
+
+    - Información de clientes, que se subdivide en datos regulados como [PII (Personally Identifiable Information)](https://www.imperva.com/learn/data-security/pii-personally-identifiable-information/) y [PHI (Protected Health Information)](https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html).
+
+---
+
+## Integración en los Procesos de Negocio
+
+El BCMS no es un silo de TI; debe estar intrínsecamente incorporado en los procesos operativos reales de la organización y alineado con la misión, visión y objetivos corporativos.
+
+!!! note "El Valor Indirecto de la Seguridad y Continuidad"
+
+    Puede ser complejo aterrizar la misión y visión de la empresa con controles técnicos o análisis de riesgos. Sin embargo, si TI y Seguridad de la Información no protegen la integridad, confidencialidad y disponibilidad, el negocio no podrá operar, vender su producto o prestar su servicio. Aunque TI no siempre genere ingresos directos, aporta un valor indirecto incalculable al garantizar la supervivencia operativa.
+
+---
+
+## Acciones para Abordar Riesgos y Oportunidades
+
+En el marco de la gestión ISO, se deben evaluar ambas caras de la moneda ante la incertidumbre:
+
+- **Riesgo:** Probabilidad de que un evento afecte *negativamente* a los objetivos.
+
+- **Oportunidad:** Probabilidad de que un evento afecte *positivamente* a los objetivos.
+
+### Identificación de Riesgos
+
+- **Evaluación integral:**
+
+  No se limita a los sistemas; abarca cualquier evento que tenga un impacto económico o de viabilidad de negocio.
+
+- **Identificación de activos y recursos críticos:**
+
+  Saber qué es lo que realmente importa proteger y mantener operativo.
+
+- **Riesgos sobre el propio BCMS:**
+
+  Identificar qué sucede si el sistema de gestión falla por sí mismo. Por ejemplo, el riesgo de no tomar en serio los simulacros de recuperación o los escenarios internos que podrían llevar al fracaso absoluto de la política de continuidad.
+
+### Tratamiento del Riesgo
+
+
+
+Una vez identificado un riesgo operativo o tecnológico, existen cuatro posturas para tratarlo:
+
+1. **Transferir:**
+
+   Pasar el riesgo financiero o técnico a un tercero (ej. contratar un seguro de ciberseguridad o mover la carga a un proveedor de nube pública con un SLA estricto).
+
+2. **Evitar:**
+
+   Cambiar el plan, el proceso o la arquitectura para no exponerse a esa amenaza (ej. decidir no almacenar números de tarjetas de crédito en bases de datos propias para evitar el riesgo de robo).
+
+3. **Aceptar:**
+
+   Reconocer el riesgo y su impacto, decidiendo conscientemente no actuar debido a que el costo de mitigación supera con creces el impacto potencial.
+
+4. **Mitigar:**
+
+   Implementar controles técnicos, arquitectónicos o administrativos para reducir la probabilidad o el impacto del riesgo a un nivel aceptable para el negocio.
